@@ -4,9 +4,8 @@ import java.io.FileReader;
 import java.lang.Math;
 import java.io.FileNotFoundException;
 
-// watershed technical phone interview 
 // 01/04/2024
-public class watershed {
+public class wordle {
 
     static List<String> DICT_STRINGS;
     static String answer; 
@@ -137,11 +136,11 @@ public class watershed {
 
                         for(Integer position : letterPos) {
                                 if(word.charAt(i) == answer.charAt(i)) {
-                                    watershed.board[remainingTurns][i] = GREEN + word.charAt(i) + " " + RESET;                                
+                                    wordle.board[remainingTurns][i] = GREEN + word.charAt(i) + " " + RESET;                                
                                 } else if (word.charAt(i) == answer.charAt(position)) {
-                                    watershed.board[remainingTurns][i] = YELLOW + word.charAt(i) + " " + RESET;
+                                    wordle.board[remainingTurns][i] = YELLOW + word.charAt(i) + " " + RESET;
                                 } else {
-                                  watershed.board[remainingTurns][i] = RED + word.charAt(i) + " " + RESET;
+                                  wordle.board[remainingTurns][i] = RED + word.charAt(i) + " " + RESET;
                                 }               
                         }                        
                     } else {
